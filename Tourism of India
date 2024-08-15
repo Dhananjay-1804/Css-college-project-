@@ -1,0 +1,161 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #003366;
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0 0 15px;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #006699;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation */
+nav {
+    background-color: #004466;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #003366;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.main-content .card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.main-content .card:hover {
+    transform: translateY(-10px);
+}
+
+.main-content .card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.main-content .card h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.main-content .card p {
+    padding: 0 20px 20px;
+}
+
+.main-content .card a {
+    background-color: #006699;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main-content .card a:hover {
+    background-color: #004466;
+}
+
+/* Footer */
+footer {
+    background-color: #004466;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content .card {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
+}
